@@ -1,4 +1,4 @@
-// Stops are in walking order (west to east). Coordinates verified against OpenStreetMap.
+// Stops are in walking order (a loop: out along the south, back past Plac Nowy). Coordinates verified against OpenStreetMap.
 const STOPS = [
   {
     name: "Skałka",
@@ -23,6 +23,22 @@ const STOPS = [
     address: "Plac Wolnica",
     title: "Kazimierz used to be an island",
     text: "The old Vistula channel that made Kazimierz an island was drained and filled in around 1878–1880. It is now the tree-lined Dietla Street. The old town’s heart is Plac Wolnica, with the 14th-century town hall, now the Ethnographic Museum.",
+  },
+  {
+    name: "Old Synagogue",
+    lat: 50.0514,
+    lon: 19.9486,
+    address: "Szeroka 24",
+    title: "The oldest surviving synagogue building in Poland",
+    text: "It dates from the 15th century and was rebuilt in the Renaissance style after a fire. The Nazis looted it and used it as a warehouse. It is now a branch of the Kraków Historical Museum.",
+  },
+  {
+    name: "Remuh Synagogue and Cemetery",
+    lat: 50.0526,
+    lon: 19.9473,
+    address: "Szeroka 40",
+    title: "The grave of Rabbi Moses Isserles",
+    text: "Rabbi Moses Isserles (“Remuh”, d. 1572) is buried here, and pilgrims still leave stones and notes at his tomb. The cemetery was closed in 1800 and neglected, then destroyed by the Nazis in WWII. Many broken tombstones were later pieced into the wall along its edge. The synagogue next door has been in use since 1557.",
   },
   {
     name: "Plac Nowy",
@@ -152,9 +168,9 @@ function renderStops() {
 }
 
 async function drawTour() {
-  const fallback = STOPS.map((s) => [s.lat, s.lon]);
+  const fallback = [...STOPS, STOPS[0]].map((s) => [s.lat, s.lon]);
   try {
-    const route = await fetchRoute(STOPS);
+    const route = await fetchRoute([...STOPS, STOPS[0]]);
     const latlngs = route.geometry.coordinates.map(([lon, lat]) => [lat, lon]);
     tourLine = L.polyline(latlngs, {
       color: "#b0412e",
@@ -162,11 +178,11 @@ async function drawTour() {
       opacity: 0.85,
     });
     $("route-text").textContent =
-      `${STOPS.length} stops · ${formatDistance(route.distance)} · about ${formatMinutes(route.distance)} on foot.`;
+      `${STOPS.length}-stop loop · ${formatDistance(route.distance)} · about ${formatMinutes(route.distance)} on foot, ending back at the start.`;
     const legs = $("legs");
     route.legs.forEach((leg, i) => {
       const li = document.createElement("li");
-      li.textContent = `${STOPS[i].name} → ${STOPS[i + 1].name}: ${formatDistance(leg.distance)}, ${formatMinutes(leg.distance)}`;
+      li.textContent = `${STOPS[i].name} → ${STOPS[(i + 1) % STOPS.length].name}: ${formatDistance(leg.distance)}, ${formatMinutes(leg.distance)}`;
       legs.append(li);
     });
   } catch (err) {
