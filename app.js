@@ -10,12 +10,12 @@ const INTRO = {
     "Around 1800 Kazimierz lost its separate status and became part of Kraków. In 1941 the Nazis forced the Jewish population into the Podgórze ghetto and later murdered most of them. The district decayed under communism, then revived after 1988 with the Jewish Culture Festival and with Schindler’s List, filmed here in 1993. Today it is Kraków’s bar, café and gallery quarter.",
   ],
   more: [
-    "Casimir III the Great (reigned 1333–1370) was the last king of the Piast dynasty. He fortified towns, reformed the law and founded the University of Kraków in 1364. He declared Kazimierz a town on 27 March 1335 and named it after himself. King John I Albert is the other key figure. After a fire in Kraków in June 1494, rioters blamed the Jews and attacked their homes. In 1495 the king expelled Kraków’s Jews from the city, and they moved to Kazimierz.",
+    "Casimir III the Great (reigned 1333–1370) was the last king of the Piast dynasty. He fortified towns, reformed the law and founded the University of Kraków in 1364. He declared Kazimierz a town on 27 March 1335 and named it after himself. King John I Albert is the other key figure. After a fire in Kraków in June 1494, rioters blamed the Jews and attacked their homes. The expulsion of 1495 followed that unrest.",
     "The Jewish quarter was walled off and called the Oppidum Judaeorum, “the Jewish City”. It covered only about a fifth of Kazimierz’s area but held nearly half its people.",
   ],
   full: [
     "Before the charter, three early medieval settlements stood on the island. The most important was a pagan Slavic shrine with a sacred pool at Skałka, at the island’s western tip. In 1340 the neighboring settlement of Bawół was added, so the town covered the whole island. The Old Vistula channel on its north side was filled in at the end of the 19th century and became Dietla Street.",
-    "After the Third Partition of Poland in 1795, Kraków passed to Austria and Kazimierz lost its status as a separate city. The walls were torn down in 1822. By the 1930s much Jewish intellectual life had moved to other districts, and the Jews who remained in the old quarter were mostly poor and strictly traditional. On 5–6 December 1939 the Germans blockaded Jewish homes in Kazimierz and confiscated valuables, before the forced move to the Podgórze ghetto. Since 1988 the Jewish Culture Festival has drawn people back, and Spielberg’s film was shot largely in Kazimierz, though little of the real history happened here.",
+    "The loss of city status followed the Third Partition of Poland in 1795, when Kraków passed to Austria. The walls came down in 1822. By the 1930s much Jewish intellectual life had moved to other districts, and the Jews who remained in the old quarter were mostly poor and strictly traditional. On 5–6 December 1939 the Germans blockaded Jewish homes in Kazimierz and confiscated valuables, a first step toward the ghetto. Few of the events in Spielberg’s film actually happened here, since the ghetto was across the river in Podgórze.",
   ],
   sources: [
     ["Kazimierz", W + "Kazimierz"],
@@ -40,7 +40,7 @@ const STOPS = [
     ],
     full: [
       "Why did they fall out? The sources disagree. Gallus Anonymus, the chronicler nearest in time, calls the bishop a “traitor” and the king violent. Wincenty Kadłubek says the bishop condemned the king’s cruelty to soldiers’ wives. Długosz says it was the king’s own immorality. Historians also think Stanisław backed nobles who wanted to replace Bolesław with his brother Władysław Herman. The bishop excommunicated the king, and the king had him declared a traitor.",
-      "The legend says that after his men refused to touch the bishop, the king killed him himself while he said Mass at Skałka. The body was cut up and scattered, but the pieces reunited miraculously at a pool guarded by four eagles. Some historians place the killing at Wawel Castle instead. Bolesław was deposed, fled to Hungary and was succeeded by Władysław Herman. Stanisław was canonized in 1253 and is the patron saint of Poland.",
+      "The legend says that after his men refused to touch the bishop, the king killed him himself while he said Mass at Skałka. The body was cut up and scattered, but the pieces reunited miraculously at a pool guarded by four eagles. The writer and historian Paweł Jasienica places the killing at Wawel Castle instead. Bolesław was deposed, fled to Hungary and was succeeded by Władysław Herman. Stanisław was canonized in 1253 and is the patron saint of Poland.",
       "Skałka was already a sacred place, with a pagan Slavic shrine and a sacred pool. The Pauline Fathers have held it since 1472, and the Baroque interior dates from 1733–1751. Tradition says each newly elected king of Poland came here on the eve of his coronation to do penance for the killing.",
     ],
     sources: [
@@ -63,7 +63,7 @@ const STOPS = [
       "David Gans, a Jewish chronicler in Prague about a century after Długosz, went further. He said Esterka was the king’s wife for many years and persuaded him to issue charters of freedom to the Jews. In the legend she was the beautiful, clever daughter of a poor tailor named Rafael from Opoczno, and the king installed her in a palace at Łobzów, just north of Kraków.",
     ],
     full: [
-      "In the story, Esterka bore the king two sons, Pelko and Nemir, who were baptized at their father’s wish and became the mythical ancestors of Polish noble families. Her two daughters were raised Jewish. She is also said to have advised the king on free trade, stone-built cities and tolerance, and to have helped protect Jews during the Black Death.",
+      "In the story, Esterka bore the king two sons, Pelko and Nemir, who were baptized at their father’s wish and became the mythical ancestors of Polish noble families. Her two daughters were raised Jewish. She is also said to have advised the king on free trade, stone-built cities and religious tolerance.",
       "The legend ends badly. After Casimir’s death his nephew Louis of Hungary became king, and anti-Jewish riots broke out in Kraków. Rioters are said to have broken into the palace at Łobzów and killed Esterka and her daughters. In the late 18th century King Stanisław August Poniatowski had the “Esterka Mound” at Łobzów dug up, hoping to find her grave. The mound was destroyed in the 1950s when a sports stadium was built. Krakowska 46 is an Ethnographic Museum site today, and Esterka’s name lives on in streets and places across Poland.",
     ],
     sources: [
@@ -83,11 +83,11 @@ const STOPS = [
     ],
     more: [
       "Casimir III the Great gave Kazimierz its charter in 1335, with a square market measuring 195 by 195 metres, almost as big as Kraków’s own Main Market Square. The square held traders’ stalls, a weigh-house and the town hall, where Kazimierz’s highest administrative and court authorities sat. The name Wolnica comes from the Latin forum liberum, “free trade”, a right to sell meat outside the stalls that the town received in the late 18th century.",
-      "The town hall began as a wooden building. It was rebuilt in the Renaissance style in 1528 and again after 1557, when a north wing and a tower were added. Its tower clock, installed in 1875, is the oldest working tower clock in Kraków.",
+      "The town hall began as a wooden building. It was rebuilt in the Renaissance style in 1528 and again after 1557, when a north wing and a tower were added. Its tower clock, paid for by Kazimierz’s town council, is the oldest working tower clock in Kraków.",
     ],
     full: [
       "After Kazimierz lost its city status around 1800, the town hall fell into ruin and was put up for demolition auction in 1806. It survived, and the Ethnographic Museum moved in in 1947. A restoration in 1962–1966 returned much of its original shape and added sgraffito decoration by Wacław Taranczewski.",
-      "Look for small things. A plaque from 1907 by Henryk Hochman, “The Arrival of the Jews in Poland”, hangs on the museum wall. The Germans destroyed the original in World War II, and the present plaque, found in Warsaw’s National Museum, was mounted in 1996. At number 11, another plaque marks where ruins of the university buildings that Casimir began, but never finished, were found in 1868. In the square stands the 1970 fountain of the “Three Minstrels” by Bronisław Chromy.",
+      "Look for small things. A plaque on the museum wall, “The Arrival of the Jews in Poland in the Middle Ages”, is a 1907 work by Henryk Hochman. It was mounted in 1996 after being found in Warsaw’s National Museum. An earlier plaque, showing Casimir the Great receiving the Jews, was destroyed by the Germans in World War II. At number 11, another plaque marks where ruins of the university buildings that Casimir began, but never finished, were found in 1868. In the square stands the 1970 fountain of the “Three Minstrels” by Bronisław Chromy.",
     ],
     sources: [
       ["Kazimierz town hall (Polish)", WPL + "Ratusz_kazimierski_w_Krakowie"],
@@ -109,8 +109,8 @@ const STOPS = [
       "Tadeusz Kościuszko led the national uprising of 1794, and he spoke from inside this synagogue to win Jewish support. A plaque in the entrance hall quotes the moment: “The Jews proved to the world that whenever humanity can gain, they would not spare themselves.”",
     ],
     full: [
-      "The Old Synagogue was the main religious, social and organizational center of Kraków’s Jewish community. In 1939 the Nazis desecrated it. Its art and religious objects were looted, and the building served as a warehouse. In 1943 the Germans executed 30 Polish hostages at its wall.",
-      "After a restoration in the late 1950s it became a museum, a branch of the Historical Museum of Kraków. Its exhibits cover birth, prayer, diet, divorce and death. The women’s prayer room, from the 17th century, is often used for temporary exhibitions.",
+      "The Old Synagogue was the main religious, social and organizational center of Kraków’s Jewish community. In 1943 the Germans executed 30 Polish hostages at its wall.",
+      "It was restored in 1956–1959. The exhibits cover birth, prayer, diet, divorce and death, and the women’s prayer room, from the 17th century, is often used for temporary exhibitions.",
     ],
     sources: [["Old Synagogue (Kraków)", W + "Old_Synagogue_(Krak%C3%B3w)"]],
   },
@@ -128,8 +128,8 @@ const STOPS = [
       "His father, Israel ben Josef, was a wealthy banker and Talmud scholar who settled in Kraków in 1519 after the Jews of Regensburg were expelled. One tradition says he built the synagogue in honor of his famous son. Another, based on the foundation tablet, says it commemorates Israel’s wife, Malka. A third says Moses founded it for his first wife, Golda, who died at 20.",
     ],
     full: [
-      "The synagogue was built from 1553 and completed in 1557. It was first called the “New Synagogue” to tell it apart from the Old Synagogue. An epidemic in 1552 had killed several members of Israel’s family. The cemetery beside it was founded between 1535 and 1551.",
-      "Other graves include Nathan Spira (1583–1633), a rabbi and head of the Kraków academy, Yom-Tov Lipmann Heller (1578–1654), a Talmudist, Joel Sirkis (1561–1640), a leading rabbi, and “Yossele the Holy Miser”, the hero of a Jewish folk tale. During the occupation the Nazis tore down the walls and hauled tombstones away to pave roads in camps or sell them, but Isserles’s stone stayed intact. They also seized the synagogue and used it to store firefighting equipment, and the bimah was lost. After the war the recovered tombstones were re-erected, though they are a small fraction of those that once stood. The synagogue was restored in 1957 with help from the Joint Distribution Committee’s representative in Poland, Akiva Kahane.",
+      "Work on the synagogue began in 1553. It was first called the “New Synagogue” to tell it apart from the Old Synagogue. An epidemic in 1552 had killed several members of Israel’s family. The cemetery beside it was founded between 1535 and 1551.",
+      "Other graves include Nathan Spira (1583–1633), a rabbi and head of the Kraków academy, Yom-Tov Lipmann Heller (1578–1654), a Talmudist, Joel Sirkis (1561–1640), a leading rabbi, and “Yossele the Holy Miser”, the hero of a Jewish folk tale. During the occupation the Nazis tore down the cemetery walls and sold some tombstones for profit, but Isserles’s stone stayed intact. Only a small fraction of the original monuments survive. The Germans also seized the synagogue and used it to store firefighting equipment, and the bimah was lost. The synagogue was restored in 1957 with help from the Joint Distribution Committee’s representative in Poland, Akiva Kahane.",
     ],
     sources: [
       ["Remah Synagogue", W + "Remah_Synagogue"],
@@ -147,12 +147,12 @@ const STOPS = [
       "The “Okrąglak” was built in 1900 as a market hall. From 1928 the Jewish community used it as a kosher poultry slaughterhouse. It is now home to Kraków’s famous zapiekanki (open-faced baguette pizzas) and the starting point of the district’s nightlife.",
     ],
     more: [
-      "The square was once called Plac Kupa, and it is still sometimes called the “Jewish Square”. Houses on its north side once belonged to the Jewish hospital beside the Kupa synagogue. The Okrąglak (“the round one”, also nicknamed the Rondel) is a twelve-sided building of stone and brick in the middle of the square. Sources credit its design to either Jan Rzymkowski or Władysław Klimczak.",
-      "In 1927 Kraków’s Jewish community took over the building. Józef Weinberger redesigned it, adding a covered pavilion in the old courtyard for a poultry slaughterhouse. This was shechita, the ritual slaughter that follows kosher law. It opened at the start of 1928.",
+      "The square was once called Plac Kupa, and since the late 20th century it has been popularly called the “Jewish Square”. Houses on its north side once belonged to the Jewish hospital beside the Kupa synagogue. The Okrąglak (“the round one”, also nicknamed the Rondel) is a twelve-sided building of stone and brick in the middle of the square. Sources credit its design to either Jan Rzymkowski or Władysław Klimczak.",
+      "The Jewish community took the building over in 1927. Józef Weinberger redesigned it, covering the old courtyard with a pavilion for the slaughter itself. This was shechita, ritual slaughter under kosher law, and it began at the start of 1928.",
     ],
     full: [
       "The German occupation ended the slaughterhouse. After 1945 the building went back to being an ordinary market hall, and stayed one through the communist years. It was entered in the register of monuments on 19 December 2008.",
-      "Today the square is a weekday market for vegetables and antiques, with many cafés and pubs around it. It hosts flea markets and festivals, including a concert on the Okrąglak’s roof during the Jewish Culture Festival. Zapiekanki are sold in and around the Okrąglak, and in 2025 its interior reopened as a food hall called Jatka 2.0.",
+      "Today the square is a weekday market for vegetables and antiques, with many cafés and pubs around it. It hosts flea markets and festivals, including a concert on the Okrąglak’s roof during the Jewish Culture Festival. In 2025 the Okrąglak’s interior reopened as a food hall called Jatka 2.0.",
     ],
     sources: [
       [
