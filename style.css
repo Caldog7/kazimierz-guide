@@ -200,3 +200,47 @@ main {
   text-decoration: none;
   background: var(--surface);
 }
+
+.stretch-control {
+  margin: 4px 0 12px;
+}
+
+.stretch-control label {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.stretch-control output {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.stretch-control input[type="range"] {
+  display: block;
+  width: 100%;
+  min-height: 32px;
+  margin: 4px 0 0;
+  accent-color: var(--accent);
+}
+
+.ticks {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.card[data-level="1"] .lvl-2,
+.card[data-level="1"] .lvl-3,
+.card[data-level="2"] .lvl-3 {
+  display: none;
+}
+
+.sources {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.sources a {
+  color: var(--accent);
+}
