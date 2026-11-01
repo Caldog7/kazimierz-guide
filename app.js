@@ -1,4 +1,4 @@
-// Stops are in walking order (west to east). Coordinates verified against OpenStreetMap.
+// Stops are in walking order (west to east, then across the river). Coordinates verified against OpenStreetMap.
 const STOPS = [
   {
     name: "Skałka",
@@ -7,6 +7,14 @@ const STOPS = [
     address: "Skałeczna 15",
     title: "Where Poland’s patron saint was said to be killed",
     text: "According to tradition, King Bolesław II killed Bishop Stanisław of Szczepanów here in 1079, though the story is debated. The Paulite church and monastery stand on the site. Its Crypt of the Distinguished holds the remains of Jan Długosz, Stanisław Wyspiański and Czesław Miłosz.",
+  },
+  {
+    name: "Esterka legend house",
+    lat: 50.0477,
+    lon: 19.9438,
+    address: "Krakowska 46",
+    title: "The legend of Esterka, the Jewish queen who may never have existed",
+    text: "Legend says King Casimir the Great loved a Jewish woman named Esterka. The chronicler Jan Długosz recorded the tale, and later Jewish tradition credited her with the king’s protective charters during the Black Death. No archival proof of her exists. Folk memory links her to the house at Krakowska 46.",
   },
   {
     name: "Plac Wolnica",
@@ -40,16 +48,25 @@ const STOPS = [
     title: "The grave of Rabbi Moses Isserles",
     text: "Rabbi Moses Isserles (“Remuh”, d. 1572) is buried here, and pilgrims still leave stones and notes at his tomb. The cemetery was closed in 1800 and neglected, then destroyed by the Nazis in WWII. Many broken tombstones were later pieced into the wall along its edge. The synagogue next door has been in use since 1557.",
   },
+  {
+    name: "Eagle Pharmacy",
+    lat: 50.0462,
+    lon: 19.9541,
+    address: "Plac Bohaterów Getta 18, Podgórze",
+    title: "The pharmacy inside the Kraków Ghetto",
+    text: "After the Nazis sealed the Podgórze Ghetto across the river in 1941, pharmacist Tadeusz Pankiewicz refused to move his Apteka Pod Orłem. He became the only non-Jewish Pole allowed to live and work inside the ghetto, and the pharmacy’s back rooms sheltered people during the deportations. He was later named Righteous Among the Nations. It is now a museum.",
+  },
 ];
 
 const ROUTE_API = "https://routing.openstreetmap.de/routed-foot/route/v1/foot/";
 const WALK_SPEED_MS = 1.33; // ~4.8 km/h; the demo server's own durations are unreliable
 const FAR_KM = 10;
+const CENTER = { lat: 50.0517, lon: 19.9446 }; // Plac Nowy
 
 const $ = (id) => document.getElementById(id);
 
 const map = L.map("map", { zoomControl: false }).setView(
-  [STOPS[2].lat, STOPS[2].lon],
+  [CENTER.lat, CENTER.lon],
   16,
 );
 L.control.zoom({ position: "bottomright" }).addTo(map);
@@ -249,7 +266,7 @@ function onPosition(pos) {
     meMarker.setLatLng([lat, lon]);
     meCircle.setLatLng([lat, lon]).setRadius(accuracy);
   }
-  const km = haversineKm(me, STOPS[2]);
+  const km = haversineKm(me, CENTER);
   if (km > FAR_KM) {
     $("status").textContent =
       `Live location on (±${Math.round(accuracy)} m). You’re ${Math.round(km)} km from Kazimierz.`;
