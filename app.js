@@ -1,4 +1,4 @@
-// Stops are in walking order (west to east, then across the river). Coordinates verified against OpenStreetMap.
+// Stops are in walking order (west to east). Coordinates verified against OpenStreetMap.
 const STOPS = [
   {
     name: "Skałka",
@@ -31,30 +31,6 @@ const STOPS = [
     address: "Plac Nowy",
     title: "The round building was a kosher slaughterhouse",
     text: "The “Okrąglak” was built in 1900 for kosher meat slaughter, at the center of what had been the Jewish market. It is now home to Kraków’s famous zapiekanki (open-faced baguette pizzas) and the starting point of the district’s nightlife.",
-  },
-  {
-    name: "Old Synagogue",
-    lat: 50.0514,
-    lon: 19.9486,
-    address: "Szeroka 24",
-    title: "The oldest surviving synagogue building in Poland",
-    text: "It dates from the 15th century and was rebuilt in the Renaissance style after a fire. The Nazis looted it and used it as a warehouse. It is now a branch of the Kraków Historical Museum.",
-  },
-  {
-    name: "Remuh Synagogue and Cemetery",
-    lat: 50.0526,
-    lon: 19.9473,
-    address: "Szeroka 40",
-    title: "The grave of Rabbi Moses Isserles",
-    text: "Rabbi Moses Isserles (“Remuh”, d. 1572) is buried here, and pilgrims still leave stones and notes at his tomb. The cemetery was closed in 1800 and neglected, then destroyed by the Nazis in WWII. Many broken tombstones were later pieced into the wall along its edge. The synagogue next door has been in use since 1557.",
-  },
-  {
-    name: "Eagle Pharmacy",
-    lat: 50.0462,
-    lon: 19.9541,
-    address: "Plac Bohaterów Getta 18, Podgórze",
-    title: "The pharmacy inside the Kraków Ghetto",
-    text: "After the Nazis sealed the Podgórze Ghetto across the river in 1941, pharmacist Tadeusz Pankiewicz refused to move his Apteka Pod Orłem. He became the only non-Jewish Pole allowed to live and work inside the ghetto, and the pharmacy’s back rooms sheltered people during the deportations. He was later named Righteous Among the Nations. It is now a museum.",
   },
 ];
 
